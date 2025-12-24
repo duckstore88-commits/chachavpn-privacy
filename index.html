@@ -1,1 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaChaVPN - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            color: #B794F6;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #9F7AEA;
+            margin: 30px 0 15px;
+            font-size: 1.5em;
+        }
+        p, li {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        ul { padding-left: 20px; }
+        .lang-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            border: 1px solid #B794F6;
+            background: transparent;
+            color: #B794F6;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: #B794F6;
+            color: #1a1a2e;
+        }
+        .content { display: none; }
+        .content.active { display: block; }
+        .date { color: #888; font-size: 0.9em; margin-bottom: 20px; }
+        a { color: #B794F6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ChaChaVPN</h1>
+        
+        <div class="lang-selector">
+            <button class="lang-btn active" onclick="showLang('en')">English</button>
+            <button class="lang-btn" onclick="showLang('ru')">Русский</button>
+            <button class="lang-btn" onclick="showLang('de')">Deutsch</button>
+            <button class="lang-btn" onclick="showLang('es')">Español</button>
+            <button class="lang-btn" onclick="showLang('fr')">Français</button>
+            <button class="lang-btn" onclick="showLang('it')">Italiano</button>
+            <button class="lang-btn" onclick="showLang('pt')">Português</button>
+            <button class="lang-btn" onclick="showLang('tr')">Türkçe</button>
+            <button class="lang-btn" onclick="showLang('ja')">日本語</button>
+            <button class="lang-btn" onclick="showLang('ko')">한국어</button>
+            <button class="lang-btn" onclick="showLang('zh')">中文</button>
+            <button class="lang-btn" onclick="showLang('ar')">العربية</button>
+            <button class="lang-btn" onclick="showLang('fa')">فارسی</button>
+        </div>
 
+        <!-- English -->
+        <div id="en" class="content active">
+            <h2>Privacy Policy</h2>
+            <p class="date">Last updated: December 24, 2024</p>
+            
+            <h2>Introduction</h2>
+            <p>ChaChaVPN ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our VPN application.</p>
+            
+            <h2>About Our VPN Service</h2>
+            <p>ChaChaVPN is a Virtual Private Network (VPN) application that:</p>
+            <ul>
+                <li>Encrypts your internet traffic using the WireGuard protocol</li>
+                <li>Routes your connection through secure VPN servers</li>
+                <li>Protects your privacy on public Wi-Fi networks</li>
+                <li>Uses AmneziaWG technology for enhanced security</li>
+            </ul>
+            
+            <h2>Information We Do NOT Collect</h2>
+            <p>We operate under a strict no-logs policy. We do NOT collect, store, or share:</p>
+            <ul>
+                <li>Your browsing history or internet activity</li>
+                <li>Your original IP address</li>
+                <li>DNS queries</li>
+                <li>Connection timestamps</li>
+                <li>Session duration</li>
+                <li>Bandwidth usage per user</li>
+                <li>Any data transmitted through the VPN tunnel</li>
+            </ul>
+            
+            <h2>Information Stored Locally</h2>
+            <p>The following data is stored only on your device and never transmitted to us:</p>
+            <ul>
+                <li>VPN server configurations you add manually</li>
+                <li>App preferences and settings</li>
+                <li>Language preferences</li>
+                <li>Connection statistics (displayed in-app only)</li>
+            </ul>
+            
+            <h2>VPN Connection Data</h2>
+            <p>When you connect to a VPN server:</p>
+            <ul>
+                <li>Your device establishes an encrypted tunnel to the server</li>
+                <li>All internet traffic is routed through this encrypted tunnel</li>
+                <li>Your real IP address is hidden from websites you visit</li>
+                <li>We cannot see, log, or store any of your internet activity</li>
+            </ul>
+            
+            <h2>Third-Party Services</h2>
+            <p>ChaChaVPN does not use any third-party analytics, tracking, or advertising services. We do not share any data with third parties.</p>
+            
+            <h2>Data Security</h2>
+            <p>All VPN connections are encrypted using the WireGuard protocol with state-of-the-art cryptography including:</p>
+            <ul>
+                <li>Curve25519 for key exchange</li>
+                <li>ChaCha20 for symmetric encryption</li>
+                <li>Poly1305 for data authentication</li>
+                <li>BLAKE2s for hashing</li>
+            </ul>
+            
+            <h2>Your Rights</h2>
+            <p>Since we do not collect personal data, there is no personal information for us to provide, modify, or delete. All your data remains on your device under your control.</p>
+            
+            <h2>Children's Privacy</h2>
+            <p>Our service is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+            
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, please contact us at: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Russian -->
+        <div id="ru" class="content">
+            <h2>Политика конфиденциальности</h2>
+            <p class="date">Последнее обновление: 24 декабря 2024</p>
+            
+            <h2>Введение</h2>
+            <p>ChaChaVPN ("мы") стремится защитить вашу конфиденциальность. Эта Политика объясняет, как мы обрабатываем вашу информацию при использовании нашего VPN-приложения.</p>
+            
+            <h2>Информация, которую мы НЕ собираем</h2>
+            <p>Мы придерживаемся строгой политики отсутствия логов. Мы НЕ собираем, не храним и не передаём:</p>
+            <ul>
+                <li>Историю просмотров или интернет-активность</li>
+                <li>Ваш оригинальный IP-адрес</li>
+                <li>DNS-запросы</li>
+                <li>Временные метки подключений</li>
+                <li>Продолжительность сессий</li>
+                <li>Использование трафика по пользователям</li>
+            </ul>
+            
+            <h2>Информация, хранящаяся локально</h2>
+            <p>Следующие данные хранятся только на вашем устройстве:</p>
+            <ul>
+                <li>Конфигурации VPN-серверов</li>
+                <li>Настройки приложения</li>
+                <li>Статистика подключений (отображается только в приложении)</li>
+            </ul>
+            
+            <h2>Безопасность данных</h2>
+            <p>Все VPN-соединения шифруются с использованием протокола WireGuard с современной криптографией.</p>
+            
+            <h2>Связаться с нами</h2>
+            <p>Вопросы: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- German -->
+        <div id="de" class="content">
+            <h2>Datenschutzrichtlinie</h2>
+            <p class="date">Letzte Aktualisierung: 24. Dezember 2024</p>
+            
+            <h2>Einführung</h2>
+            <p>ChaChaVPN ("wir") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen behandeln.</p>
+            
+            <h2>Informationen, die wir NICHT sammeln</h2>
+            <p>Wir verfolgen eine strikte No-Logs-Politik. Wir sammeln, speichern oder teilen NICHT:</p>
+            <ul>
+                <li>Ihren Browserverlauf oder Internetaktivität</li>
+                <li>Ihre ursprüngliche IP-Adresse</li>
+                <li>DNS-Anfragen</li>
+                <li>Verbindungszeitstempel</li>
+                <li>Sitzungsdauer</li>
+            </ul>
+            
+            <h2>Datensicherheit</h2>
+            <p>Alle VPN-Verbindungen werden mit dem WireGuard-Protokoll verschlüsselt.</p>
+            
+            <h2>Kontakt</h2>
+            <p>Fragen: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Spanish -->
+        <div id="es" class="content">
+            <h2>Política de Privacidad</h2>
+            <p class="date">Última actualización: 24 de diciembre de 2024</p>
+            
+            <h2>Introducción</h2>
+            <p>ChaChaVPN ("nosotros") se compromete a proteger su privacidad. Esta Política explica cómo manejamos su información.</p>
+            
+            <h2>Información que NO recopilamos</h2>
+            <p>Operamos bajo una estricta política de no registros. NO recopilamos:</p>
+            <ul>
+                <li>Su historial de navegación o actividad en internet</li>
+                <li>Su dirección IP original</li>
+                <li>Consultas DNS</li>
+                <li>Marcas de tiempo de conexión</li>
+            </ul>
+            
+            <h2>Seguridad de datos</h2>
+            <p>Todas las conexiones VPN están cifradas utilizando el protocolo WireGuard.</p>
+            
+            <h2>Contacto</h2>
+            <p>Preguntas: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- French -->
+        <div id="fr" class="content">
+            <h2>Politique de Confidentialité</h2>
+            <p class="date">Dernière mise à jour: 24 décembre 2024</p>
+            
+            <h2>Introduction</h2>
+            <p>ChaChaVPN ("nous") s'engage à protéger votre vie privée. Cette Politique explique comment nous traitons vos informations.</p>
+            
+            <h2>Informations que nous NE collectons PAS</h2>
+            <p>Nous appliquons une politique stricte de non-journalisation. Nous NE collectons PAS:</p>
+            <ul>
+                <li>Votre historique de navigation</li>
+                <li>Votre adresse IP d'origine</li>
+                <li>Les requêtes DNS</li>
+                <li>Les horodatages de connexion</li>
+            </ul>
+            
+            <h2>Sécurité des données</h2>
+            <p>Toutes les connexions VPN sont chiffrées avec le protocole WireGuard.</p>
+            
+            <h2>Contact</h2>
+            <p>Questions: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Chinese -->
+        <div id="zh" class="content">
+            <h2>隐私政策</h2>
+            <p class="date">最后更新：2024年12月24日</p>
+            
+            <h2>简介</h2>
+            <p>ChaChaVPN（"我们"）致力于保护您的隐私。本隐私政策说明我们如何处理您的信息。</p>
+            
+            <h2>我们不收集的信息</h2>
+            <p>我们执行严格的无日志政策。我们不收集：</p>
+            <ul>
+                <li>您的浏览历史或互联网活动</li>
+                <li>您的原始IP地址</li>
+                <li>DNS查询</li>
+                <li>连接时间戳</li>
+            </ul>
+            
+            <h2>数据安全</h2>
+            <p>所有VPN连接均使用WireGuard协议加密。</p>
+            
+            <h2>联系我们</h2>
+            <p>问题咨询：<a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Italian -->
+        <div id="it" class="content">
+            <h2>Informativa sulla Privacy</h2>
+            <p class="date">Ultimo aggiornamento: 24 dicembre 2024</p>
+            
+            <h2>Introduzione</h2>
+            <p>ChaChaVPN ("noi") si impegna a proteggere la tua privacy. Questa Informativa spiega come gestiamo le tue informazioni.</p>
+            
+            <h2>Informazioni che NON raccogliamo</h2>
+            <p>Operiamo secondo una rigorosa politica di non registrazione. NON raccogliamo:</p>
+            <ul>
+                <li>La tua cronologia di navigazione o attività internet</li>
+                <li>Il tuo indirizzo IP originale</li>
+                <li>Query DNS</li>
+                <li>Timestamp delle connessioni</li>
+            </ul>
+            
+            <h2>Sicurezza dei dati</h2>
+            <p>Tutte le connessioni VPN sono crittografate utilizzando il protocollo WireGuard.</p>
+            
+            <h2>Contattaci</h2>
+            <p>Domande: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Portuguese -->
+        <div id="pt" class="content">
+            <h2>Política de Privacidade</h2>
+            <p class="date">Última atualização: 24 de dezembro de 2024</p>
+            
+            <h2>Introdução</h2>
+            <p>ChaChaVPN ("nós") está comprometido em proteger sua privacidade. Esta Política explica como tratamos suas informações.</p>
+            
+            <h2>Informações que NÃO coletamos</h2>
+            <p>Operamos sob uma política rigorosa de não registro. NÃO coletamos:</p>
+            <ul>
+                <li>Seu histórico de navegação ou atividade na internet</li>
+                <li>Seu endereço IP original</li>
+                <li>Consultas DNS</li>
+                <li>Timestamps de conexão</li>
+            </ul>
+            
+            <h2>Segurança de dados</h2>
+            <p>Todas as conexões VPN são criptografadas usando o protocolo WireGuard.</p>
+            
+            <h2>Contato</h2>
+            <p>Dúvidas: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Turkish -->
+        <div id="tr" class="content">
+            <h2>Gizlilik Politikası</h2>
+            <p class="date">Son güncelleme: 24 Aralık 2024</p>
+            
+            <h2>Giriş</h2>
+            <p>ChaChaVPN ("biz") gizliliğinizi korumaya kararlıdır. Bu Politika, bilgilerinizi nasıl işlediğimizi açıklar.</p>
+            
+            <h2>Toplamİdığımız Bilgiler</h2>
+            <p>Katı bir kayıt tutmama politikası uyguluyoruz. Toplamiyoruz:</p>
+            <ul>
+                <li>Tarama geçmişiniz veya internet etkinliğiniz</li>
+                <li>Orijinal IP adresiniz</li>
+                <li>DNS sorguları</li>
+                <li>Bağlantı zaman damgaları</li>
+            </ul>
+            
+            <h2>Veri Güvenliği</h2>
+            <p>Tüm VPN bağlantıları WireGuard protokolü kullanılarak şifrelenir.</p>
+            
+            <h2>İletişim</h2>
+            <p>Sorular: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Japanese -->
+        <div id="ja" class="content">
+            <h2>プライバシーポリシー</h2>
+            <p class="date">最終更新日: 2024年12月24日</p>
+            
+            <h2>はじめに</h2>
+            <p>ChaChaVPN（「当社」）は、お客様のプライバシーを保護することをお約束します。</p>
+            
+            <h2>収集しない情報</h2>
+            <p>厳格なノーログポリシーを遵守しています。以下の情報は収集しません:</p>
+            <ul>
+                <li>閲覧履歴またはインターネット活動</li>
+                <li>元のIPアドレス</li>
+                <li>DNSクエリ</li>
+                <li>接続タイムスタンプ</li>
+            </ul>
+            
+            <h2>データセキュリティ</h2>
+            <p>すべてのVPN接続はWireGuardプロトコルを使用して暗号化されます。</p>
+            
+            <h2>お問い合わせ</h2>
+            <p>ご質問: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Korean -->
+        <div id="ko" class="content">
+            <h2>개인정보 처리방침</h2>
+            <p class="date">업데이트: 2024년 12월 24일</p>
+            
+            <h2>소개</h2>
+            <p>ChaChaVPN("우리")은 귀하의 개인정보 보호를 약속합니다.</p>
+            
+            <h2>수집하지 않는 정보</h2>
+            <p>엄격한 노로그 정책을 준수합니다. 수집하지 않습니다:</p>
+            <ul>
+                <li>브라우징 기록 또는 인터넷 활동</li>
+                <li>원래 IP 주소</li>
+                <li>DNS 쿼리</li>
+                <li>연결 타임스탬프</li>
+            </ul>
+            
+            <h2>데이터 보안</h2>
+            <p>모든 VPN 연결은 WireGuard 프로토콜을 사용하여 암호화됩니다.</p>
+            
+            <h2>연락처</h2>
+            <p>문의: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Arabic -->
+        <div id="ar" class="content" dir="rtl">
+            <h2>سياسة الخصوصية</h2>
+            <p class="date">آخر تحديث: 24 ديسمبر 2024</p>
+            
+            <h2>مقدمة</h2>
+            <p>ChaChaVPN ("نحن") ملتزمة بحماية خصوصيتك.</p>
+            
+            <h2>المعلومات التي لا نجمعها</h2>
+            <p>نتبع سياسة صارمة لعدم الاحتفاظ بالسجلات. لا نجمع:</p>
+            <ul>
+                <li>سجل التصفح أو نشاط الإنترنت</li>
+                <li>عنوان IP الأصلي</li>
+                <li>استعلامات DNS</li>
+                <li>طوابع وقت الاتصال</li>
+            </ul>
+            
+            <h2>أمان البيانات</h2>
+            <p>جميع اتصالات VPN مشفرة باستخدام بروتوكول WireGuard.</p>
+            
+            <h2>اتصل بنا</h2>
+            <p>الأسئلة: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+
+        <!-- Persian -->
+        <div id="fa" class="content" dir="rtl">
+            <h2>سیاست حفظ حریم خصوصی</h2>
+            <p class="date">آخرین به‌روزرسانی: 24 دسامبر 2024</p>
+            
+            <h2>مقدمه</h2>
+            <p>ChaChaVPN ("ما") متعهد به حفظ حریم خصوصی شما است.</p>
+            
+            <h2>اطلاعاتی که جمع‌آوری نمی‌کنیم</h2>
+            <p>ما سیاست سخت‌گیرانه عدم ثبت گزارش را دنبال می‌کنیم:</p>
+            <ul>
+                <li>تاریخچه مرور یا فعالیت اینترنتی</li>
+                <li>آدرس IP اصلی</li>
+                <li>درخواست‌های DNS</li>
+                <li>زمان‌بندی اتصال</li>
+            </ul>
+            
+            <h2>امنیت داده‌ها</h2>
+            <p>تمام اتصالات VPN با پروتکل WireGuard رمزگذاری می‌شوند.</p>
+            
+            <h2>تماس با ما</h2>
+            <p>سوالات: <a href="mailto:duck.power.cpa@gmail.com">duck.power.cpa@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
